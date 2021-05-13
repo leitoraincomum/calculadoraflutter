@@ -50,7 +50,7 @@ class _CalculatorState extends State<Calculator> {
                   fontWeight: FontWeight.w200,
                   decoration: TextDecoration.none,
                   fontSize: 80.0,
-                  color: Colors.white,
+                  color: Colors.purpleAccent,
                 ),
               ),
             ),
@@ -62,8 +62,8 @@ class _CalculatorState extends State<Calculator> {
 
   Widget _buildKeyboardButton(String label,
       {int flex = 1,
-      Color textColor = Colors.blueAccent,
-      Color backgroundColor = Colors.black}) {
+      Color textColor = Colors.white,
+      Color backgroundColor = Colors.brown}) {
     return Expanded(
       flex: flex,
       child: RaisedButton(
@@ -96,7 +96,7 @@ class _CalculatorState extends State<Calculator> {
                 _buildKeyboardButton('AC', textColor: Colors.deepOrange),
                 _buildKeyboardButton('DEL', textColor: Colors.deepOrange),
                 _buildKeyboardButton('%', textColor: Colors.deepOrange),
-                _buildKeyboardButton('÷', textColor: Colors.purpleAccent),
+                _buildKeyboardButton('÷', textColor: Colors.black),
               ],
             ),
           ),
@@ -108,7 +108,7 @@ class _CalculatorState extends State<Calculator> {
                 _buildKeyboardButton('7'),
                 _buildKeyboardButton('8'),
                 _buildKeyboardButton('9'),
-                _buildKeyboardButton('x', textColor: Colors.purpleAccent),
+                _buildKeyboardButton('x', textColor: Colors.black),
               ],
             ),
           ),
@@ -120,7 +120,7 @@ class _CalculatorState extends State<Calculator> {
                 _buildKeyboardButton('4'),
                 _buildKeyboardButton('5'),
                 _buildKeyboardButton('6'),
-                _buildKeyboardButton('+', textColor: Colors.purpleAccent),
+                _buildKeyboardButton('+', textColor: Colors.black),
               ],
             ),
           ),
@@ -132,7 +132,7 @@ class _CalculatorState extends State<Calculator> {
                 _buildKeyboardButton('1'),
                 _buildKeyboardButton('2'),
                 _buildKeyboardButton('3'),
-                _buildKeyboardButton('-', textColor: Colors.purpleAccent),
+                _buildKeyboardButton('-', textColor: Colors.black),
               ],
             ),
           ),
@@ -143,7 +143,7 @@ class _CalculatorState extends State<Calculator> {
               children: <Widget>[
                 _buildKeyboardButton('0', flex: 2),
                 _buildKeyboardButton('.'),
-                _buildKeyboardButton('=', textColor: Colors.deepPurple),
+                _buildKeyboardButton('=', textColor: Colors.black87),
               ],
             ),
           ),
