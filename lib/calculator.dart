@@ -33,7 +33,7 @@ class _CalculatorState extends State<Calculator> {
     return Expanded(
       flex: 1,
       child: Container(
-        color: Colors.black87,
+        color: Colors.grey,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -50,7 +50,7 @@ class _CalculatorState extends State<Calculator> {
                   fontWeight: FontWeight.w200,
                   decoration: TextDecoration.none,
                   fontSize: 80.0,
-                  color: Colors.purpleAccent,
+                  color: Colors.black87,
                 ),
               ),
             ),
